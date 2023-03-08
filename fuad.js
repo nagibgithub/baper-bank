@@ -36,8 +36,8 @@ function mainCalculation(isDeposit, depositInputId, depositOrWithdrawTotalId, bt
             balanceField.innerText = newBalanceAmount.toFixed(2);
         } else {
             if (parseFloat(balanceField.innerText) >= parseFloat(inputField.value)) {
-                depositOrWithdrawField.innerText = newDepositAmount;
-                balanceField.innerText = newWithdrayBalanceAmount;
+                depositOrWithdrawField.innerText = newDepositAmount.toFixed(2);
+                balanceField.innerText = newWithdrayBalanceAmount.toFixed(2);
             } else {
                 alert('withdraw can not be more than balance')
             }
